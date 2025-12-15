@@ -1,114 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Atingium Gnosium</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body class="d-flex flex-column min-vh-100">
+
   <header class="container py-3 border-bottom">
     <div class="row align-items-center">
       <div class="col-8 col-md-4 d-flex align-items-center">
-        <img src="" alt="falcão" class="img-fluid me-2" style="max-width:48px;">
+        <img src="https://picsum.photos/48/48?random=1" alt="logo falcão" class="img-fluid me-2" style="max-width:48px;">
         <div>
-          <h3 class="h6 mb-3">Atingium Gnosium</h3>
-          <p class="small mb-2 text-muted d-none d-md-block">Atinja a gnose na livraria da gnose!</p>
+          <h3 class="h6 mb-1">Atingium Gnosium</h3>
+          <p class="small mb-0 text-muted d-none d-md-block">Atinja a gnose na livraria da gnose!</p>
         </div>
+      </div>
+
+      <div class="col-4 col-md-8 text-end">
+        <a href="#catalogo" class="btn btn-sm btn-outline-secondary me-2">Catálogo</a>
+        <a href="#contato" class="btn btn-sm btn-outline-secondary">Contato</a>
       </div>
     </div>
   </header>
 
-
   <main class="flex-grow-1">
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Mihail</h4>
-              <img src="/images/Animals-Falcon-icon.png" width="30px" height="20px">
-              <p class="card-text">
-                LIVRO BAUM DA PORR
-              </p>
-              <div class="btn btn-primary"><i class="bi bi-cart"></i> Carrinho</div>
+    <div class="container py-5">
+
+      <section class="hero p-4 p-md-5 mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <span class="badge-ghost mb-2 d-inline-block">Livraria Esotérica</span>
+            <h1 class="display-6 fw-bold">Atingium Gnosium</h1>
+            <p class="lead text-muted">Textos antigos, guias iniciáticos e ficções arcanas. Curadoria pensada para quem busca conhecimento além do óbvio.</p>
+            <div class="d-flex gap-2">
+              <a href="#catalogo" class="btn btn-primary btn-lg">Ver catálogo</a>
+              <a href="#destaques" class="btn btn-outline-primary btn-lg">Destaques</a>
+            </div>
+            <ul class="list-inline mt-3 muted-small">
+              <li class="list-inline-item me-3"><i class="bi bi-truck me-1"></i> Frete nacional</li>
+              <li class="list-inline-item me-3"><i class="bi bi-award me-1"></i> Seleção curada</li>
+              <li class="list-inline-item"><i class="bi bi-shield-check me-1"></i> Pagamento seguro</li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 text-center mt-4 mt-md-0">
+            <img src="https://picsum.photos/360/420?random=2" alt="capa destaque" class="img-fluid rounded shadow-sm">
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="destaques" class="my-4">
+        <h3 class="h5 fw-bold mb-3">Destaques</h3>
+        <div class="row g-3">
+          <div class="col-sm-6 col-md-4">
+            <div class="card card-book h-100">
+              <img src="https://picsum.photos/300/420?random=11" class="card-img-top" alt="capa livro 1">
+              <div class="card-body">
+                <h5 class="card-title mb-1">O Mistério da Gnose Perdida</h5>
+                <p class="text-muted small mb-2">Hermes Trismegisto</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong class="text-success">R$ 89,90</strong>
+                  <a class="btn btn-sm btn-outline-primary" href="detalhes_livro.html">Comprar</a>
+                </div>
+              </div>
             </div>
           </div>
 
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Pluto volume 4</h4>
-              <img src="/images/WhatsApp Image 2025-12-07 at 19.20.38.jpeg" width="30px" height="20px">
-              <p class="card-text">
-                Liro muito bom pra homens machos
-              </p>
-              <div class="btn btn-primary"><i class="bi bi-cart"></i> Carrinho</div>
+          <div class="col-sm-6 col-md-4">
+            <div class="card card-book h-100">
+              <img src="https://picsum.photos/300/420?random=12" class="card-img-top" alt="capa livro 2">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Pluto Volume 4</h5>
+                <p class="text-muted small mb-2">Naoki Urasawa (Gênio)</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong class="text-success">R$ 59,90</strong>
+                  <a class="btn btn-sm btn-outline-primary" href="detalhes_livro.html">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card card-book h-100">
+              <img src="https://picsum.photos/300/420?random=13" class="card-img-top" alt="capa livro 3">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Contos Iniciáticos</h5>
+                <p class="text-muted small mb-2">Vários Autores</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <strong class="text-success">R$ 39,90</strong>
+                  <a class="btn btn-sm btn-outline-primary" href="detalhes_livro.html">Comprar</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">João gay</h4>
-              <img src="images/WhatsApp Image 2025-12-07 at 19.20.38.jpeg" width="30px" height="20px">
-              <p class="card-text">João tchola</p>
-              <div class="btn btn-primary"><i class="bi bi-cart"></i> Carrinho</div>
+      </section>
+
+      <hr>
+
+      <section id="catalogo" class="my-4">
+        <h3 class="h5 fw-bold mb-3">Catálogo selecionado</h3>
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="card h-100 text-center p-2">
+              <img src="https://picsum.photos/200/260?random=21" alt="livro A" class="img-fluid mb-2" style="height:160px; object-fit:cover;">
+              <h6 class="mb-1">Livro A</h6>
+              <p class="small text-muted mb-2">Autor A</p>
+              <div class="d-grid">
+                <button class="btn btn-sm btn-outline-primary">Ver</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="card h-100 text-center p-2">
+              <img src="https://picsum.photos/200/260?random=22" alt="livro B" class="img-fluid mb-2" style="height:160px; object-fit:cover;">
+              <h6 class="mb-1">Livro B</h6>
+              <p class="small text-muted mb-2">Autor B</p>
+              <div class="d-grid">
+                <button class="btn btn-sm btn-outline-primary">Ver</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="card h-100 text-center p-2">
+              <img src="https://picsum.photos/200/260?random=23" alt="livro C" class="img-fluid mb-2" style="height:160px; object-fit:cover;">
+              <h6 class="mb-1">Livro C</h6>
+              <p class="small text-muted mb-2">Autor C</p>
+              <div class="d-grid">
+                <button class="btn btn-sm btn-outline-primary">Ver</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="card h-100 text-center p-2">
+              <img src="https://picsum.photos/200/260?random=24" alt="livro D" class="img-fluid mb-2" style="height:160px; object-fit:cover;">
+              <h6 class="mb-1">Livro D</h6>
+              <p class="small text-muted mb-2">Autor D</p>
+              <div class="d-grid">
+                <button class="btn btn-sm btn-outline-primary"><a href="carrinho.html">Ver</a></button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Mihail</h4>
-              <img src="/images/Animals-Falcon-icon.png" width="30px" height="20px">
-              <p class="card-text">
-                LIVRO BAUM DA PORR
-              </p>
-              <div class="btn btn-primary"><i class="bi bi-cart"></i> Carrinho</div>
+      </section>
+
+      <hr>
+
+      <section id="depoimentos" class="my-4">
+        <h3 class="h5 fw-bold mb-3">O que dizem os leitores</h3>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="testimonial">
+              <p class="mb-1">"Seleção impecável e atendimento atencioso. Encontrei obras que não achava em nenhum outro lugar."</p>
+              <small class="text-muted">— Marina</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial">
+              <p class="mb-1">"Envio rápido e embalagens cuidadosas. Recomendo para quem busca títulos raros."</p>
+              <small class="text-muted">— Rafael</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial">
+              <p class="mb-1">"A curadoria é sensível e coerente com quem busca aprofundar estudos esotéricos."</p>
+              <small class="text-muted">— Lúcia</small>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Pluto volume 4</h4>
-              <img src="/images/WhatsApp Image 2025-12-07 at 19.20.38.jpeg" width="30px" height="20px">
-              <p class="card-text">
-                Liro muito bom pra homens machos
-              </p>
-            </div>
+      </section>
+
+      <hr>
+
+      <section id="contato" class="my-4">
+        <h5 class="fw-bold mb-3">Contato</h5>
+        <p class="muted-small mb-2">Dúvidas, parcerias ou sugestões? Envie uma mensagem rápida.</p>
+        <form id="formContato" class="row g-2" style="max-width:720px;">
+          <div class="col-md-6">
+            <input class="form-control" placeholder="Nome" required>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">João gay</h4>
-              <img src="images/WhatsApp Image 2025-12-07 at 19.20.38.jpeg" width="30px" height="20px">
-              <p class="card-text">João tchola</p>
-            </div>
+          <div class="col-md-6">
+            <input class="form-control" placeholder="E-mail" type="email" required>
           </div>
-        </div>
-      </div>
+          <div class="col-12">
+            <textarea class="form-control" rows="3" placeholder="Mensagem" required></textarea>
+          </div>
+          <div class="col-12 d-grid">
+            <button class="btn btn-outline-primary">Enviar</button>
+          </div>
+        </form>
+      </section>
+
     </div>
   </main>
 
   <footer class="mt-auto container py-3 border-top text-center">
-    <p class="text-muted mb-0">&copy; 2025 Atingium Gnosium. All rights reserved.</p>
+    <div class="row">
+      <div class="col-md-6 text-md-start mb-2 mb-md-0">
+        <p class="text-muted mb-0">&copy; 2025 Atingium Gnosium. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a class="text-muted me-3 small" href="#">Política de privacidade</a>
+        <a class="text-muted small" href="#">Termos</a>
+      </div>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  <script>
+    // mockei sie
+    document.getElementById('formContato').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Mensagem enviada. Obrigado pelo contato!');
+      this.reset();
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
   </script>
-
+</body>
 </html>
